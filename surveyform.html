@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="surveycss.css">
+
+    <title>
+        Student Survey Form
+    </title>
+
+</head>
+
+<body>
+    <h1>Student Survey Form</h1>
+
+    <!-- Create Form -->
+    <form id="form">
+      <!--First name-->
+
+        <!-- Details -->
+        <div class="form-control">
+            <label for=" First_name" id="label-First_name">
+                First Name
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="First_name"
+                   placeholder="Enter your first name"
+                   required />
+        </div>
+        <!--Last name-->
+        <div class="form-control">
+            <label for=" Last_name" id="label-Last_name">
+                Last Name
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="Last_name"
+                   placeholder="Enter your last name"
+                   required />
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email"
+                   required />
+        </div>
+        <div class="form-control">
+            <label for="telephone" id="label-telephone number">
+                Telephone number
+            </label>
+
+            <!-- Input Type telephone number-->
+            <input type="number"
+                   id="telephone number"
+                   placeholder="Enter your telephone number"
+                   required />
+        </div>
+
+        <div class="form-control">
+            <label for="address" id="label-address">
+                Address
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="address"
+                   placeholder="Enter your street address"
+                   required />
+        <!--city-->
+      </div>
+        <div class="form-control">
+            <label for="city" id="label-city">
+                City
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="city"
+                   placeholder="Enter your city"
+                   required />
+        </div>
+
+        <!--state-->
+      </div>
+        <div class="form-control">
+            <label for="state" id="label-state">
+                State
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="state"
+                   placeholder="Enter State"
+                   required />
+        </div>
+        <!--zip code-->
+      </div>
+        <div class="form-control">
+            <label for="zip" id="label-zip">
+                Zip code
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="number"
+                   id="zip"
+                   placeholder="enter zip code"
+                   required />
+        </div>
+        <!--date of survey-->
+      </div>
+        <div class="form-control">
+            <label for="Survey_date" id="label-Survey_date">
+                Date of Survey(mm/dd/yy)
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="Survey_date"
+                   placeholder="Survey_date"
+                   required />
+        </div>
+
+
+
+        <!--drop down list-->
+        <div class="form-control">
+            <label for="recommend" id="label-recommend">
+                How likely to recommend to other prospective students?
+            </label>
+
+            <!-- Dropdown options -->
+            <select name="recommend" id="recommend">
+                <option value="likely">Likely</option>
+                <option value="very_likely">Very Likely</option>
+                <option value="unlikely">
+                    Unlikely
+                </option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>
+                How did you get intrested in the university?
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="option-1">
+                <input type="radio"
+                       id="option-1"
+                       name="ans">Friends</input>
+            </label>
+            <label for="option-2">
+                <input type="radio"
+                       id="option-1"
+                       name="ans">Television</input>
+            </label>
+            <label for="option-3">
+                <input type="radio"
+                       id="option-1"
+                       name="ans">Internet</input>
+            </label>
+            <label for="option-4">
+              <input type="radio"
+                id="option-1"
+              name="ans">Other</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>What did you most like about the campus?
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">Students</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">Location</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">Campus</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">Atmosphere</input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">Dorm rooms</input></label>
+            <label for="inp-6">
+                <input type="checkbox"
+                       name="inp">Sports</input></label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+        <!--raffle-->
+      </div>
+        <div class="form-control">
+            <label for="raffle" id="label-raffle">
+                Raffle( enter at least ten comma separated
+numbers ranging from 1 through100 to win a free movie ticket )
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="raffle"
+                   placeholder="enter here!!"
+                   required />
+        </div>
+
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+        <button type="Cancel" value="Cancel">
+            Cancel
+        </button>
+    </form>
+</body>
+
+</html>
